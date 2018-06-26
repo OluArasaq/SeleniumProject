@@ -1,4 +1,4 @@
-﻿Feature: ArgusMediaRegister
+﻿Feature: ArgusMediaCrudeInfo
 
 
 Scenario: Verify that a user can check crude oil information 

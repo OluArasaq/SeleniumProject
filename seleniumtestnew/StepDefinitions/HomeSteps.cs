@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using seleniumtestnew.Helpers;
-using seleniumtestnew.Pages;
+using UITestAutomation.Helpers;
+using UITestAutomation.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,19 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 
-namespace seleniumtestnew.StepDefinitions
+namespace UITestAutomation.StepDefinitions
     {
     [Binding]
    public  class HomeSteps
     {
         private readonly Context context;
-        private readonly homePage homepg;
+        private readonly HomePage homepageObj;
 
-        public HomeSteps(Context contex, homePage homepag)
+        public HomeSteps(Context contex, HomePage homepag)
         {
 
             context = contex;
-            homepg = homepag;
+            homepageObj = homepag;
         }
 
         [Given(@"i am on argus home page")]
@@ -32,16 +32,16 @@ namespace seleniumtestnew.StepDefinitions
         [When(@"i select what market i am looking for")]
         public void WhenISelectWhatMarketIAmLookingFor()
         {
-            homepg.YourMarket();
-            homepg.WhatYouLookFor();
-            homepg.SelectionThree();
-            homepg.GetStarted();
+            homepageObj.YourMarket();
+            homepageObj.WhatYouLookFor();
+            homepageObj.SelectionThree();
+            homepageObj.GetStarted();
         }
 
         [Then(@"i should be able to land on crude oil information page successfully")]
         public void ThenIShouldBeAbleToLandOnCrudeOilInformationPageSuccessfully()
         {
-            Assert.AreEqual("ARGUS Fundamentals", homepg.VerifyMarketPlace());
+            Assert.AreEqual("ARGUS Fundamentals", homepageObj.VerifyMarketPlace());
         }
 
     }

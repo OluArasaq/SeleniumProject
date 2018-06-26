@@ -6,7 +6,7 @@
     <ProjectGuid>{1566FE79-4B51-48C8-8964-387D1FE43090}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>seleniumtestnew</RootNamespace>
+    <RootNamespace>UITestAutomation</RootNamespace>
     <AssemblyName>seleniumtestnew</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -78,8 +78,8 @@
       <DependentUpon>argusfeature.feature</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Context.cs" />
-    <Compile Include="Hooks\testhook.cs" />
-    <Compile Include="Pages\homePage.cs" />
+    <Compile Include="Hooks\Testhook.cs" />
+    <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StepDefinitions\HomeSteps.cs" />
   </ItemGroup>

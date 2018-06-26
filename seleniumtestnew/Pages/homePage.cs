@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-using seleniumtestnew.Helpers;
+using UITestAutomation.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,12 +7,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading; 
 
-namespace seleniumtestnew.Pages
+namespace UITestAutomation.Pages
 {
-   public class homePage
+   public class HomePage
       {
        private readonly Context _context;
-       public homePage(Context context)
+       public HomePage(Context context)
         {
             _context = context;
         }
@@ -20,7 +20,6 @@ namespace seleniumtestnew.Pages
        private By MARKETELEMENTClick = By.XPath("//*[@class='text' and text()='1. What is your market?']");
        private By LOOKINGFORCLICK = By.XPath("//*[@class='text' and text()='2. What are you looking for?']");
        private By SELECTTHREE = By.XPath("//*[@class='text' and text()='3. Select']");
-
        private By CRUDEOIL = By.XPath("//*[@id='main']/section[1]/div[2]/div/fieldset/div[1]/div/div/div/div[2]");
        private By NEARTERM = By.XPath("//*[@id='main']/section[1]/div[2]/div/fieldset/div[2]/div/div/div[3]");
        private By ARGUSFUND = By.XPath("//*[@id='main']/section[1]/div[2]/div/fieldset/div[3]/div/div/div[2]");

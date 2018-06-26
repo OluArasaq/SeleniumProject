@@ -1,4 +1,4 @@
-﻿using seleniumtestnew.Helpers;
+﻿using UITestAutomation.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,14 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 
-namespace seleniumtestnew.Hooks
+namespace UITestAutomation.Hooks
 {
     [Binding]
-    public sealed class testhook
+    public sealed class Testhook
     {
         private readonly Context _context;
 
-        public testhook(Context context)
+        public Testhook(Context context)
         {
             _context = context;
         }

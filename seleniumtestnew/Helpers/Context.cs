@@ -8,12 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace seleniumtestnew.Helpers
+namespace UITestAutomation.Helpers
 {
     public class Context
     {
         public IWebDriver Driver;
-        // private string BaseUrl= "https://www.valtech.com";
         private string BaseUrl = "https://www.argusmedia.com/";
 
         public void BrowserSetup()

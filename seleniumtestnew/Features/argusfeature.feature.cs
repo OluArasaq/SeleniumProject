@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace seleniumtestnew.Features
+namespace UITestAutomation.Features
 {
     using TechTalk.SpecFlow;
     
@@ -18,7 +18,7 @@ namespace seleniumtestnew.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.2.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class ArgusMediaRegisterFeature
+    public partial class ArgusMediaCrudeInfoFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -44,7 +44,7 @@ namespace seleniumtestnew.Features
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "ArgusMediaRegister", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "ArgusMediaCrudeInfo", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -59,9 +59,9 @@ namespace seleniumtestnew.Features
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "ArgusMediaRegister")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "ArgusMediaCrudeInfo")))
             {
-                global::seleniumtestnew.Features.ArgusMediaRegisterFeature.FeatureSetup(null);
+                global::UITestAutomation.Features.ArgusMediaCrudeInfoFeature.FeatureSetup(null);
             }
         }
         
@@ -84,7 +84,7 @@ namespace seleniumtestnew.Features
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Verify that a user can check crude oil information")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "ArgusMediaRegister")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "ArgusMediaCrudeInfo")]
         public virtual void VerifyThatAUserCanCheckCrudeOilInformation()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify that a user can check crude oil information", ((string[])(null)));
