@@ -1,4 +1,5 @@
-﻿using seleniumtestnew.Helpers;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using seleniumtestnew.Helpers;
 using seleniumtestnew.Pages;
 using System;
 using System.Collections.Generic;
@@ -22,9 +23,6 @@ namespace seleniumtestnew.StepDefinitions
             homepg = homepag;
         }
 
-
-
-
         [Given(@"i am on argus home page")]
         public void GivenIAmOnArgusHomePage()
         {
@@ -37,12 +35,13 @@ namespace seleniumtestnew.StepDefinitions
             homepg.YourMarket();
             homepg.WhatYouLookFor();
             homepg.SelectionThree();
+            homepg.GetStarted();
         }
 
-        [Then(@"i should be able to register successfully")]
-        public void ThenIShouldBeAbleToRegisterSuccessfully()
+        [Then(@"i should be able to land on crude oil information page successfully")]
+        public void ThenIShouldBeAbleToLandOnCrudeOilInformationPageSuccessfully()
         {
-            context.CloseBrowser(); 
+            Assert.AreEqual("ARGUS Fundamentals", homepg.VerifyMarketPlace());
         }
 
     }

@@ -41,8 +41,6 @@ namespace seleniumtestnew.Helpers
             Driver.Quit();
             Driver.Dispose();
         }
-
-
         public void DropDownSelection(IWebElement element, int text)
         {
 
